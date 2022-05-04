@@ -1,0 +1,61 @@
+tried making it so when you click your mouse it sends you to another era
+doesnt work so lemme try to think of solutions
+
+import pygame
+pygame.init()
+Screen = pygame.display.set_mode((1155,470))
+Clock = pygame.time.Clock()
+Intro = True
+GameIsBeginning = False
+Yugoslaviaww1Era = False
+Yugoslavww1ThingStarts = False
+ThEndOfWw2Text = pygame.image.load('GamStuf/the_end_ofww1text.png')
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    if Intro:
+        Screen.fill('Black')
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            GameIsBeginning = True
+            Intro = False
+
+
+    if GameIsBeginning == True:
+        Screen.blit(ThEndOfWw2Text,(0,0))
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            Yugoslavww1ThingStarts = True
+            GameIsBeginning = False
+            
+    #if Yugoslavww1ThingStarts and event.type == pygame.MOUSEBUTTONDOWN:
+        #GameIsBeginning = False
+        #Yugoslaviaww1Era = True
+
+        #GameIsBeginning = False
+
+    if Yugoslaviaww1Era:
+        Screen.fill('purple')
+
+    pygame.display.update()
+    Clock.tick(60)
+    
+    maybe collidepoint
+    or maybe not using so many variables 
+    eh im not gonna try that
+    gimme a few minutes
+    -been like 4-5 minutes
+    im making me a pizza(im a fatass ngl)
+    im tired already goddamn
+    maybe a mouse variable?
+    idk
+    Im probably gonna go to sleep in a few
+    ill take a shower
+    ate my pizza and im back now and I think I can get this shit to work in a few
+    got done with it
+    ill work on it tomorrow
+    not what I wanted but ok
+    yeah im done now 
+    peace
+    
+    
